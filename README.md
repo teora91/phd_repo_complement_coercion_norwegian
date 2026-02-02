@@ -43,8 +43,11 @@ This repository is developed and maintained by **Matteo Radaelli** as part of hi
 For questions, feedback, or collaboration inquiries related to this project, please contact:
 
 **Matteo Radaelli**
-PhD Researcher in Computational Linguistics
+
+PhD Candidate in Computational Linguistics
+
 Trondheim, Norway
+
 Email: [matteo.radaelli@ntnu.no](mailto:matteo.radaelli@ntnu.no)
 
 ## 📂 Repository Structure
