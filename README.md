@@ -45,7 +45,7 @@ For questions, feedback, or collaboration inquiries related to this project, ple
 **Matteo Radaelli**
 PhD Researcher in Computational Linguistics
 Trondheim, Norway
-Email: [your.email@institution.no](mailto:your.email@institution.no)
+Email: [matteo.radaelli@ntnu.no](mailto:matteo.radaelli@ntnu.no)
 
 ## 📂 Repository Structure
 
