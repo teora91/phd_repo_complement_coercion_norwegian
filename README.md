@@ -34,9 +34,9 @@ The project includes:
 
 This repository is developed and maintained by **Matteo Radaelli** as part of his PhD research in Computational Linguistics at the Norwegian University of Science and Technology (NTNU). The work is carried out in collaboration with, and under the supervision of:
 
-* **Giosuè Baggio** — Professor of Cognitive Science, NTNU [https://www.ntnu.edu/employees/giosue.baggio](https://www.ntnu.edu/employees/giosue.baggio). Email: [giosue.baggio@ntnu.no](mailto:giosue.baggio@ntnu.no)
-* **Emanuele Chersoni** — Assistant Professor, The Hong Kong Polytechnic University [https://research.polyu.edu.hk/en/persons/emmanuele-chersoni/](https://research.polyu.edu.hk/en/persons/emmanuele-chersoni/). Email: [emmanuele.chersoni@polyu.edu.hk](mailto:emmanuele.chersoni@polyu.edu.hk)
-* **Alessandro Lenci** — Professor, University of Pisa [https://people.unipi.it/alessandro_lenci/](https://people.unipi.it/alessandro_lenci/). Email: [alessandro.lenci@unipi.it](mailto:alessandro.lenci@unipi.it)
+* [**Giosuè Baggio**](https://www.ntnu.edu/employees/giosue.baggio) — Professor of Cognitive Science, NTNU. Email: [giosue.baggio@ntnu.no](mailto:giosue.baggio@ntnu.no)
+* [**Emanuele Chersoni**](https://research.polyu.edu.hk/en/persons/emmanuele-chersoni/) — Assistant Professor, The Hong Kong Polytechnic University. Email: [emmanuele.chersoni@polyu.edu.hk](mailto:emmanuele.chersoni@polyu.edu.hk)
+* [**Alessandro Lenci**](https://people.unipi.it/alessandro_lenci/) — Professor, University of Pisa. Email: [alessandro.lenci@unipi.it](mailto:alessandro.lenci@unipi.it)
 
 ## Contact
 
