@@ -16,7 +16,7 @@ The results indicate that complement coercion poses a substantial challenge for 
 
 ## Research Scope
 
-The aim of this project is to investigate how modern multilingual language models represent and process complement coercion phenomena in Norwegian, with a particular focus on:
+The aim of this project is to investigate how modern transformer-based language models represent and process complement coercion phenomena in Norwegian, with a particular focus on:
 
 * **Verb-specific coercion constructions** (e.g., *begynne på* vs. *avslutte*)
 * **Cross-model comparison** across encoder-based (e.g., BERT) and decoder-based (e.g., GPT) architectures
