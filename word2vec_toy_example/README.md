@@ -1,7 +1,7 @@
 # Toy example: Word2Vec Trainer & Visualization
 
 A toy example of training **dense word embeddings** using a Skip-gram Word2Vec model. 
-This The project trains a small embedding space from a small set of text corpus and further visualized using PCA projection. This model implementation was used as illustrative example of distributional semantic models introduced in Section 3.2. 
+This project trains a small embedding space from a small set of text corpus and further visualized using PCA projection. This model implementation was used as illustrative example of distributional semantic models introduced in Section 3.2. 
 
 ---
 
