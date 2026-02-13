@@ -48,7 +48,7 @@ word2vec_toy_example
 ### Clone the repository
 
 ```bash
-git clone [https://github.com/<your-username>/toy-word2vec-demo.git](https://github.com/teora91/phd_repo_complement_coercion_norwegian.git)
+git clone https://github.com/teora91/phd_repo_complement_coercion_norwegian.git
 cd word2vec_toy_example
 ```
 
