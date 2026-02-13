@@ -1,11 +1,9 @@
 # Corpus Analysis on Complement Coercion in Norwegian: Aspectual Verbs Sentence Extractor + Extra Material
 
 ## Repository Scope
-This repository accompanies the material for a **paper currently under review**.  
-For confidentiality reasons, the title of the paper cannot be disclosed at this stage.  
+This repository accompanies the material for a **paper currently under review** named *Complement coercion with aspectual verbs is statistically infrequent in written Norwegian*.  
 
-## Repository Contents
-- **`APPENDIX_aspectual_verb_extractor_NCC_1.0/`**  
+## Repository Contents- **`APPENDIX_aspectual_verb_extractor_NCC_1.0/`**  
   Contains detailed instructions and usage guide for running the extractor.
   The repository contains the Python scripts that automatically and structurally extract aspectual verbs from the **Norwegian Colossal Corpus (NCC)** hosted on [Hugging Face](https://huggingface.co/).
   Instructions are provided in the README file in the folder.
