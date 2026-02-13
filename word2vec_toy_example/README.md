@@ -1,19 +1,15 @@
-# Toy Word2Vec Trainer & Visualization
+# Toy example: Word2Vec Trainer & Visualization
 
-A minimal educational repository showing how **word embeddings emerge from raw text** using a Skip-gram Word2Vec model and how they can be inspected visually in 2D.
-
-The project trains a small embedding space from a plain text corpus and demonstrates semantic structure (e.g., *coffee* closer to *espresso* than to *dog*) using PCA projection.
+A toy example of training **dense word embeddings** using a Skip-gram Word2Vec model. This The project trains a small embedding space from a small set of text corpus and further visualized using PCA projection. This model implementation was used as illustrative example of distributional semantic models introduced in Section 3.2. 
 
 ---
 
-## What this project demonstrates
+## Demo
 
-This repository is intentionally simple and designed for teaching / understanding.
+The script includes
 
-It illustrates:
-
-* Building a corpus pipeline (reading + tokenization)
-* Learning semantic similarity from co-occurrence statistics
+* Building a corpus/data preprocessing pipeline (loading + tokenization). The corpus includes a small set of sentences designed to encode clear, visually separable distributional information (e.g., coffee/cafe, animals/pets, and books/reading).
+* Training Word2Vec model, including learning semantic similarity from co-occurrence statistics of single token
 * Using cosine similarity to measure meaning relatedness
 * Projecting embeddings into 2D space for visualization
 
@@ -36,6 +32,7 @@ Cosine similarities (higher = closer in embedding space):
 .
 ├── corpus.txt
 ├── word2vec_trainer_visualization.py
+├── word2vec_trainer_visualization.ipynb (in notebook version)
 ├── requirements.txt
 └── plot_toy_embeddings.png   (generated after running)
 ```
@@ -44,68 +41,20 @@ Cosine similarities (higher = closer in embedding space):
 
 ## Installation
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/toy-word2vec-demo.git
-cd toy-word2vec-demo
+git clone [https://github.com/<your-username>/toy-word2vec-demo.git](https://github.com/teora91/phd_repo_complement_coercion_norwegian.git)
+cd word2vec_toy_example
 ```
 
 ---
 
-### 2. Create a virtual environment (recommended)
-
-#### Using venv
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-Windows:
-
-```bash
-.venv\\Scripts\\activate
-```
-
-#### Using conda (optional)
-
-```bash
-conda create -n word2vec-demo python=3.10
-conda activate word2vec-demo
-```
-
----
-
-### 3. Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## Prepare the corpus
-
-Create a file named:
-
-```
-corpus.txt
-```
-
-Each line must be one sentence.
-
-Example:
-
-```
-I drank an espresso at the cafe
-The barista served hot coffee
-My dog chased the cat
-The pet drank milk
-The cafe serves good coffee
-```
-
-The model learns purely from these co-occurrence patterns.
 
 ---
 
@@ -121,7 +70,7 @@ The script will:
 2. Tokenize and normalize text
 3. Train a Skip-gram Word2Vec model
 4. Print similarity scores
-5. Generate a 2D embedding plot
+5. Generate/Save a 2D embedding plot
 
 ---
 
@@ -134,26 +83,6 @@ plot_toy_embeddings.png
 ```
 
 This figure shows clusters of semantically related words in the learned vector space.
-
----
-
-## How it works (conceptual overview)
-
-The model follows the **distributional hypothesis**:
-
-> Words that appear in similar contexts tend to have similar meanings.
-
-Skip-gram objective:
-
-Given a target word, predict its surrounding context words.
-
-Because words like:
-
-```
-espresso, coffee, cafe, barista
-```
-
-share contexts, they become close in the vector space.
 
 ---
 
@@ -170,18 +99,6 @@ Modify parameters inside `train_model()`:
 | `epochs`      | number of training iterations |
 
 ---
-
-## Educational purpose
-
-Useful for:
-
-* NLP teaching
-* explaining distributional semantics
-* lecture demonstrations
-* quick embedding intuition experiments
-
----
-
 ## License
 
 MIT License — free for research and teaching.
