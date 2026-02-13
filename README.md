@@ -24,7 +24,7 @@ The aim of this project is to investigate how modern transformer-based language 
 * **Lexical semantic and compositional evaluation**
 
 
-## Authorship and Supervision
+## Co-Authorship and Supervision
 
 This repository is developed and maintained by **Matteo Radaelli** as part of his PhD research in Computational Linguistics at the Norwegian University of Science and Technology (NTNU). The work is carried out in collaboration with, and under the supervision of:
 
