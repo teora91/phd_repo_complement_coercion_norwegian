@@ -33,7 +33,7 @@ Cosine similarities (higher = closer in embedding space):
 ## Repository structure
 
 ```
-.
+word2vec_toy_example
 ├── corpus.txt
 ├── word2vec_trainer_visualization.py
 ├── word2vec_trainer_visualization.ipynb (in notebook version)
