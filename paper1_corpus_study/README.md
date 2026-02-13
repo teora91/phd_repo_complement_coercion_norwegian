@@ -17,7 +17,7 @@ This repository accompanies the material for a **paper currently under review** 
   Contains the list of synonyms of aspectual verbs collected through the Nettskjema poll.  
 
 
-Co-authorship and Supervision
+## Co-authorship and Supervision
 
 This repository is developed and maintained by **Matteo Radaelli** as part of his PhD research in Computational Linguistics at the Norwegian University of Science and Technology (NTNU). The work is carried out in collaboration with, and under the supervision of:
 
