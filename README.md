@@ -21,14 +21,8 @@ The aim of this project is to investigate how modern transformer-based language 
 * **Verb-specific coercion constructions** (e.g., *begynne på* vs. *avslutte*)
 * **Cross-model comparison** across encoder-based (e.g., BERT) and decoder-based (e.g., GPT) architectures
 * **Surprisal analysis** to quantify model expectations in coercive contexts
-* **Lexical semantic and compositional evaluation** using top-*k* predictions and plausibility criteria
+* **Lexical semantic and compositional evaluation**
 
-The project includes:
-
-* Corpus preparation and annotation for coercion phenomena
-* Standardized evaluation pipelines for typological analysis
-* Scripts for surprisal computation on masked and autoregressive architectures
-* Benchmarks and visualization tools for model behavior analysis
 
 ## Authorship and Supervision
 
