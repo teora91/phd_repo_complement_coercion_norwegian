@@ -155,15 +155,15 @@ Models differ in:
 
 Both **masked language models (MLMs)** and **causal language models (CLMs)** are evaluated.
 
----
+## Repository Structure
 
-# Repository Structure
+```
 .
 ├── data_for_task/
-│ ├── llm_list_nor.json
-│ ├── entity_verb_association.xlsx
-│ ├── list_lemma_coercion_inflected.xlsx
-│ └── experiment_coercion_dataset.xlsx
+│   ├── llm_list_nor.json
+│   ├── entity_verb_association.xlsx
+│   ├── list_lemma_coercion_inflected.xlsx
+│   └── experiment_coercion_dataset.xlsx
 │
 ├── main.py
 ├── classification.py
@@ -174,8 +174,8 @@ Both **masked language models (MLMs)** and **causal language models (CLMs)** are
 ├── merging_results.py
 ├── extract_predictions.py
 ├── utils.py
-├── test_coercion_launcher.sh
----
+└── test_coercion_launcher.sh
+```
 
 # Script Overview
 
