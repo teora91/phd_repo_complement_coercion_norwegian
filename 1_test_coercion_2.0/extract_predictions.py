@@ -8,13 +8,6 @@ from datetime import date
 today = date.today().strftime('%d-%m-%y')
 import os
 
-def retrieve_g_sheet(gheet_path):
-    records_data = read_gsheet(gheet_path)
-    df_semantic = pd.DataFrame.from_dict(records_data)
-    df_semantic.columns = df_semantic.iloc[0]
-    df_semantic = df_semantic.iloc[1:]
-    return df_semantic
-
 def extraction_new_events(path_new_results): 
     df = pd.read_csv(path_new_results)
     df["predicted_events"] = df["predicted_events"].apply(literal_eval)
