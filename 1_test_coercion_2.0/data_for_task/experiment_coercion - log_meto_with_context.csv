@@ -1,0 +1,369 @@
+,,,,,,note:,sempre mantenuto frasi canoniche. ,,,,,,,
+,,,,,,,nel dis_context condition esiste solo un contesto precedente alla frase di coercion,,,,,,,
+,,,,,,,"notato dalla formazione di frasi per condizione, abbiamo difficolta nel poter triggerare CE. Per alcuni serve piu contesto. ",,,,,,,
+,,,,,,,,COERCION SENTENCE,,,,,,
+index,cat_letter,CAT,CONDITION,item,pred_event,SUBJ,PRE_CONTEXT,VERB,PREP,ARG,POST_CRIT,EOS,token_len,ok
+1,a,food,neutral,strudel-n,kjevle,kim,%,verb,på|med|\%,strudelen,%,.,4,1
+1,b,food,subject,strudel-n,kjevle,konditoren,%,verb,på|med|\%,strudelen,%,.,4,1
+1,c,food,PP,strudel-n,kjevle,kim,%,verb,på|med|\%,strudelen,én centimeter tykk,.,7,1
+1,d,food,dis_context,strudel-n,kjevle,kim,"[SUBJ] hadde tenkt å lage deigen fin, slik at han kunne fylle den med epler.",verb,på|med|\%,strudelen,%,.,19,1
+2,a,food,neutral,kake-a,servere,kim,%,verb,på|med|\%,kaken,%,.,4,1
+2,b,food,subject,kake-a,servere,kelneren,%,verb,på|med|\%,kaken,%,.,4,1
+2,c,food,PP,kake-a,servere,kim,%,verb,på|med|\%,kaken,foran kundens bord,.,7,1
+2,d,food,dis_context,kake-a,servere,kim,"[SUBJ] kuttet opp en skive, la den på en tallerken og gikk raskt mot kunden.",verb,på|med|\%,kaken,%,.,19,1
+3,a,food,neutral,lasagne-n,bake,kim,%,verb,på|med|\%,lasagnen,%,.,4,1
+3,b,food,subject,lasagne-n,bake,kokken,%,verb,på|med|\%,lasagnen,%,.,4,1
+3,c,food,PP,lasagne-n,bake,kim,%,verb,på|med|\%,lasagnen,ved høye temperaturer,.,7,1
+3,d,food,dis_context,lasagne-n,bake,kim,"[SUBJ] forberedte måltidet til kveldens gjester, skrudde på ovnen og satte den på høy temperatur.",verb,på|med|\%,lasagnen,%,.,19,1
+4,a,food,neutral,potet-n,skjære,kim,%,verb,på|med|\%,poteten,%,.,4,1
+4,b,food,subject,potet-n,skjære,kokkeassistenten,%,verb,på|med|\%,poteten,%,.,4,1
+4,c,food,PP,potet-n,skjære,kim,%,verb,på|med|\%,poteten,i små terninger,.,7,1
+4,d,food,dis_context,potet-n,skjære,kim,"[SUBJ] tok skjærebrettet og kniven fra kjøkkenhyllen og la dem på bordet, klare til bruk.",verb,på|med|\%,poteten,%,.,19,1
+5,a,food,neutral,parmesan-n,bake,kim,%,verb,på|med|\%,parmesanen,%,.,4,1
+5,b,food,subject,parmesan-n,bake,soussjefen,%,verb,på|med|\%,parmesanen,%,.,4,1
+5,c,food,PP,parmesan-n,bake,hans,%,verb,på|med|\%,parmesanen,i statisk modus,.,7,1
+5,d,food,dis_context,parmesan-n,bake,hans,[SUBJ] ville lage smeltet ost laget i ovnen med sesongens ferske grønnsaker fra hagen sin.,verb,på|med|\%,parmesanen,%,.,19,1
+6,a,food,neutral,muskat-en,male,kim,%,verb,på|med|\%,muskaten,%,.,4,1
+6,b,food,subject,muskat-en,male,mølleren,%,verb,på|med|\%,muskaten,%,.,4,1
+6,c,food,PP,muskat-en,male,kim,%,verb,på|med|\%,muskaten, til fint pulver,.,8,1
+6,d,food,dis_context,muskat-en,male,kim,"[SUBJ] ville tilsette krydder i pulverform i retten, men han hadde bare grove ingredienser å bruke.",verb,på|med|\%,muskaten,%,.,20,1
+7,a,food,neutral,pizza-en,fylle,kim,%,verb,på|med|\%,pizzaen,%,.,4,1
+7,b,food,subject,pizza-en,fylle,commisen,%,verb,på|med|\%,pizzaen,%,.,4,1
+7,c,food,PP,pizza-en,fylle,kim,%,verb,på|med|\%,pizzaen,for ekstra smak,.,7,1
+7,d,food,dis_context,pizza-en,fylle,kim,"[SUBJ] kjevlet ut deigen, la den rå tomaten på toppen og var klar med ingrediensene.",verb,på|med|\%,pizzaen,%,.,19,1
+8,a,food,neutral,deig,skjære,kim,%,begynte/starte,på|med|\b,deigen,%,.,4,1
+8,b,food,subject,deig,skjære,sjefen,%,begynte/starte,på|med|\b,deigen,%,.,4,1
+8,c,food,PP,deig,skjære,kim,%,begynte/starte,på|med|\b,deigen,i to deler,.,7,1
+8,d,food,dis_context,deig,skjære,kim,[SUBJ] tok alt ut av kjøleskapet for å dele det opp i flere like porsjoner.,begynte/starte,på|med|\b,deigen,%,.,19,1
+9,a,food,neutral,brød,fryse,kim,%,begynte/starte,på|med|\b,brødet,%,.,4,1
+9,b,food,subject,brød,fryse,kokken,%,begynte/starte,på|med|\b,brødet,%,.,4,1
+9,c,food,PP,brød,fryse,kim,%,begynte/starte,på|med|\b,brødet,for lang oppbevaring,.,7,1
+9,d,food,dis_context,brød,fryse,kim,[SUBJ] hadde mye restmat og ville bruke den om noen måneder til en annen anledning.,begynte/starte,på|med|\b,brødet,%,.,19,1
+10,a,food,neutral,salat-n,krydre,kim,%,begynte/starte,på|med|\b,salaten,%,.,4,1
+10,b,food,subject,salat-n,krydre,kjøkkensjefen,%,begynte/starte,på|med|\b,salaten,%,.,4,1
+10,c,food,PP,salat-n,krydre,kim,%,begynte/starte,på|med|\b,salaten,for et pikant måltid,.,8,1
+10,d,food,dis_context,salat-n,krydre,kim,[SUBJ] ville tilsette noe i retten sin som ville gjøre den mer smakfull og sterkere.,begynte/starte,på|med|\b,salaten,%,.,19,1
+11,a,food,neutral,ruccola-en,plante,kim,%,begynte/starte,på|med|\b,ruccolaen,%,.,4,1
+11,b,food,subject,ruccola-en,plante,bonden,%,begynte/starte,på|med|\b,ruccolaen,%,.,4,1
+11,c,food,PP,ruccola-en,plante,kim,%,begynte/starte,på|med|\b,ruccolaen,i drivhuset hjemme,.,7,1
+11,d,food,dis_context,ruccola-en,plante,kim,"[SUBJ] ønsket å få tak i friske, modne grønnsaker til neste sommer fra hagen hjemme.",begynte/starte,på|med|\b,ruccolaen,%,.,19,1
+12,a,food,neutral,paprika-n,steke,kim,%,begynte/starte,på|med|\b,paprikaen,%,.,4,1
+12,b,food,subject,paprika-n,steke,moren,%,begynte/starte,på|med|\b,paprikaen,%,.,4,1
+12,c,food,PP,paprika-n,steke,kim,%,begynte/starte,på|med|\b,paprikaen,i en stor stekepanne,.,8,1
+12,d,food,dis_context,paprika-n,steke,kim,[SUBJ] hadde kuttet og vasket alle grønnsakene og var klar til å tilberede dem raskt.,begynte/starte,på|med|\b,paprikaen,%,.,19,1
+13,a,food,neutral,sopp-n,bake,kim,%,begynte/starte,på|med|\b,soppen,%,.,4,1
+13,b,food,subject,sopp-n,bake,lederen,%,begynte/starte,på|med|\b,soppen,%,.,4,1
+13,c,food,PP,sopp-n,bake,kim,%,begynte/starte,på|med|\b,soppen,med grillfunksjonen aktiv,.,7,1
+13,d,food,dis_context,sopp-n,bake,kim,[SUBJ] tok et stekebrett og strødde det med olje for å legge grønnsakene på toppen.,begynte/starte,på|med|\b,soppen,%,.,19,1
+14,a,food,neutral,trøffel-n,fritere,kim,%,begynte/starte,på|med|\b,trøffelen,%,.,4,1
+14,b,food,subject,trøffel-n,fritere,kokken,%,begynte/starte,på|med|\b,trøffelen,%,.,4,1
+14,c,food,PP,trøffel-n,fritere,kim,%,begynte/starte,på|med|\b,trøffelen,ved høye oljetemperaturer,.,7,1
+14,d,food,dis_context,trøffel-n,fritere,kim,[SUBJ] varmet opp rapsoljen til høy temperatur og var derfor klar til å tilberede middagen.,begynte/starte,på|med|\b,trøffelen,%,.,19,1
+15,a,food,neutral,løk-n,hakke,kim,%,begynte/starte,på|med|\b,løken,%,.,4,1
+15,b,food,subject,løk-n,hakke,farfaren,%,begynte/starte,på|med|\b,løken,%,.,4,1
+15,c,food,PP,løk-n,hakke,kim,%,begynte/starte,på|med|\b,løken,i små biter,.,7,1
+15,d,food,dis_context,løk-n,hakke,kim,"[SUBJ] måtte lage tomatsausen, så han tok med seg de kuttede ingrediensene og en skarp kniv.",begynte/starte,på|med|\b,løken,%,.,20,1
+16,a,text,neutral,papyrus-t,male,kim,%,begynte/starte,på|med|\b,papyruset,%,.,4,1
+16,b,text,subject,papyrus-t,male,kunstneren,%,begynte/starte,på|med|\b,papyruset,%,.,4,1
+16,c,text,PP,papyrus-t,male,kim,%,begynte/starte,på|med|\b,papyruset,for en lys farge,.,8,1
+16,d,text,dis_context,papyrus-t,male,kim,[SUBJ] ville gjøre et gammelt verk vakkert med noen raske penselstrøk og nye oljefarger i kanten.,begynte/starte,på|med|\b,papyruset,%,.,20,1
+17,a,text,neutral,pergament-t,tegne,kim,%,begynte/starte,på|med|\b,pergamentet,%,.,4,1
+17,b,text,subject,pergament-t,tegne,grafikeren,%,begynte/starte,på|med|\b,pergamentet,%,.,4,1
+17,c,text,PP,pergament-t,tegne,kim,%,begynte/starte,på|med|\b,pergamentet,fra fine konturer,.,7,1
+17,d,text,dis_context,pergament-t,tegne,kim,[SUBJ] satt i tegneseriestudioet med papir og blyant i hånden og var full av ideer.,begynte/starte,på|med|\b,pergamentet,%,.,19,1
+18,a,text,neutral,essay-et,oversette,kim,%,begynte/starte,på|med|\b,essayet,%,.,4,1
+18,b,text,subject,essay-et,oversette,tolken,%,begynte/starte,på|med|\b,essayet,%,.,4,1
+18,c,text,PP,essay-et,oversette,kim,%,begynte/starte,på|med|\b,essayet,ved hjelp av ordboken,.,8,1
+18,d,text,dis_context,essay-et,oversette,kim,[SUBJ] ønsket å publisere sitt nye verk på et annet språk for en fransk avis.,begynte/starte,på|med|\b,essayet,%,.,19,1
+19,a,text,neutral,pamflett-en,designe,kim,%,begynte/starte,på|med|\b,pamfletten,%,.,4,1
+19,b,text,subject,pamflett-en,designe,markedsføringsspesialisten ,%,begynte/starte,på|med|\b,pamfletten,%,.,5,1
+19,c,text,PP,pamflett-en,designe,kim,%,begynte/starte,på|med|\b,pamfletten,ved hjelp av Canva,.,8,1
+19,d,text,dis_context,pamflett-en,designe,kim,[SUBJ] finner en passende og attraktiv layout for å markedsføre den nye telekommunikasjonstjenesten i utlandet.,begynte/starte,på|med|\b,pamfletten,%,.,19,1
+20,a,text,neutral,manuskript-et,male,kim,%,begynte/starte,på|med|\b,manuskriptet,%,.,4,1
+20,b,text,subject,manuskript-et,male,presten,%,begynte/starte,på|med|\b,manuskriptet,%,.,4,1
+20,c,text,PP,manuskript-et,male,kim,%,begynte/starte,på|med|\b,manuskriptet,i raske strøk,.,7,1
+20,d,text,dis_context,manuskript-et,male,kim,[SUBJ] ønsket å uttrykke fantasien sin med ulike pensler og mørke farger på solide treplater.,begynte/starte,på|med|\b,manuskriptet,%,.,19,1
+21,a,text,neutral,testamente-et,rive,kim,%,begynte/starte,på|med|\b,testamentet,%,.,4,1
+21,b,text,subject,testamente-et,rive,fienden,%,begynte/starte,på|med|\b,testamentet,%,.,4,1
+21,c,text,PP,testamente-et,rive,kim,%,begynte/starte,på|med|\b,testamentet,i langsgående strimler,.,7,1
+21,d,text,dis_context,testamente-et,rive,kim,"[SUBJ] ville ikke miste foreldrenes eneste hjem, som fetteren, konkurrenten hans, kjempet om å få.",begynte/starte,på|med|\b,testamentet,%,.,19,1
+22,a,text,neutral,prolog-en,transkribere,kim,%,begynte/starte,på|med|\b,prologen,%,.,4,1
+22,b,text,subject,prolog-en,transkribere,munken,%,begynte/starte,på|med|\b,prologen,%,.,4,1
+22,c,text,PP,prolog-en,transkribere,kim,%,begynte/starte,på|med|\b,prologen,i et annet manuskript,.,8,1
+22,d,text,dis_context,prolog-en,transkribere,kim,"[SUBJ] ville redde tekster som bleknet med tiden, og ville bevare dem i fysisk format.",begynte/starte,på|med|\b,prologen,%,.,19,1
+23,a,text,neutral,epilog-en,oversette,kim,%,begynte/starte,på|med|\b,epilogen,%,.,4,1
+23,b,text,subject,epilog-en,oversette,tolken,%,begynte/starte,på|med|\b,epilogen,%,.,4,1
+23,c,text,PP,epilog-en,oversette,kim,%,begynte/starte,på|med|\b,epilogen,fra italiensk til arabisk,.,8,1
+23,d,text,dis_context,epilog-en,oversette,kim,[SUBJ] ville sende en av bøkene sine til en venn som ikke kunne språket hans.,begynte/starte,på|med|\b,epilogen,%,.,19,1
+24,a,text,neutral,sonett-en,resitere,kim,%,begynte/starte,på|med|\b,sonetten,%,.,4,1
+24,b,text,subject,sonett-en,resitere,skuespilleren,%,begynte/starte,på|med|\b,sonetten,%,.,4,1
+24,c,text,PP,sonett-en,resitere,kim,%,begynte/starte,på|med|\b,sonetten,i det franske teateret,.,8,1
+24,d,text,dis_context,sonett-en,resitere,kim,"[SUBJ], som hadde inntatt scenen foran et lydhørt publikum, kremtet høylytt før den poetiske fremføringen.",begynte/starte,på|med|\b,sonetten,%,.,19,1
+25,a,text,neutral,haiku-en,lese,kim,%,begynte/starte,på|med|\b,haikuen,%,.,4,1
+25,b,text,subject,haiku-en,lese,barnet,%,begynte/starte,på|med|\b,haikuen,%,.,4,1
+25,c,text,PP,haiku-en,lese,kim,%,begynte/starte,på|med|\b,haikuen,høyt foran foreldrene sine,.,8,1
+25,d,text,dis_context,haiku-en,lese,kim,[SUBJ] satte seg i sofaen etter å ha hentet noen skrifter fra sitt personlige bibliotek.,begynte/starte,på|med|\b,haikuen,%,.,19,1
+26,a,text,neutral,monografi-en,lese,kim,%,begynte/starte,på|med|\b,monografien,%,.,4,1
+26,b,text,subject,monografi-en,lese,studenten,%,begynte/starte,på|med|\b,monografien,%,.,4,1
+26,c,text,PP,monografi-en,lese,kim,%,begynte/starte,på|med|\b,monografien,til en universitetseksamen,.,7,1
+26,d,text,dis_context,monografi-en,lese,kim,[SUBJ] ønsket å bestå den vanskelige avsluttende eksamen i litteratur for å få sin mastergrad.,begynte/starte,på|med|\b,monografien,%,.,19,1
+27,a,text,neutral,epigraf-en,gravere/riste,kim,%,begynte/starte,på|med|\b,epigrafen,%,.,4,1
+27,b,text,subject,epigraf-en,gravere/riste,håndverker,%,begynte/starte,på|med|\b,epigrafen,%,.,4,1
+27,c,text,PP,epigraf-en,gravere/riste,kim,%,begynte/starte,på|med|\b,epigrafen,ved hjelp av meiselen ,.,9,1
+27,d,text,dis_context,epigraf-en,gravere/riste,kim,[SUBJ] ønsket å minnes sin nylig avdøde kone ved å legge igjen noe på marmoren.,begynte/starte,på|med|\b,epigrafen,%,.,19,1
+28,a,text,neutral,manga-en,farge,kim,%,begynte/starte,på|med|\b,mangaen,%,.,4,1
+28,b,text,subject,manga-en,farge,billedkunstner,%,begynte/starte,på|med|\b,mangaen,%,.,4,1
+28,c,text,PP,manga-en,farge,kim,%,begynte/starte,på|med|\b,mangaen,fra de svarte blyantkantene,.,8,1
+28,d,text,dis_context,manga-en,farge,kim,[SUBJ] tok fargestiftene fra voksskuffen fordi det etterlengtede nye verket hans fortsatt var i svart-hvitt.,begynte/starte,på|med|\b,mangaen,%,.,19,1
+29,a,text,neutral,brosjyre-n,lese,kim,%,begynte/starte,på|med|\b,brosjyren,%,.,4,1
+29,b,text,subject,brosjyre-n,lese,studenten,%,begynte/starte,på|med|\b,brosjyren,%,.,4,1
+29,c,text,PP,brosjyre-n,lese,kim,%,begynte/starte,på|med|\b,brosjyren,av stor personlig interesse,.,8,1
+29,d,text,dis_context,brosjyre-n,lese,kim,[SUBJ] var på et reisebyrå for å organisere en tur til Tenerife med vennene sine.,begynte/starte,på|med|\b,brosjyren,%,.,19,1
+30,a,text,neutral,novelle-n,oversette,kim,%,begynte/starte,på|med|\b,novellen,%,.,4,1
+30,b,text,subject,novelle-n,oversette,tolken,%,begynte/starte,på|med|\b,novellen,%,.,4,1
+30,c,text,PP,novelle-n,oversette,kim,%,begynte/starte,på|med|\b,novellen,for en utenlandsk venn,.,8,1
+30,d,text,dis_context,novelle-n,oversette,kim,[SUBJ] var ekspert på fremmedspråk og jobbet for et stort bokforlag som eksporterte til utlandet.,begynte/starte,på|med|\b,novellen,%,.,19,1
+31,a,clothing,neutral,pullover-en,skjære,kim,%,begynte/starte,på|med|\b,pulloveren,%,.,4,1
+31,b,clothing,subject,pullover-en,skjære,yrkesutøveren,%,begynte/starte,på|med|\b,pulloveren,%,.,4,1
+31,c,clothing,PP,pullover-en,skjære,kim,%,begynte/starte,på|med|\b,pulloveren,i store stykker,.,7,1
+31,d,clothing,dis_context,pullover-en,skjære,kim,[SUBJ] tok med seg en avbitertang fordi han hadde gamle klær han ikke lenger kunne bruke.,begynte/starte,på|med|\b,pulloveren,%,.,20,1
+32,a,clothing,neutral,jakke-n,farge,kim,%,begynte/starte,på|med|\b,jakken,%,.,4,1
+32,b,clothing,subject,jakke-n,farge,kunstneren,%,begynte/starte,på|med|\b,jakken,%,.,4,1
+32,c,clothing,PP,jakke-n,farge,kim,%,begynte/starte,på|med|\b,jakken,ved hjelp av penselen,.,8,1
+32,d,clothing,dis_context,jakke-n,farge,kim,"[SUBJ] ville bytte ut den gamle dressen sin, og bestemte seg for å kjøpe litt maling.",begynte/starte,på|med|\b,jakken,%,.,20,1
+33,a,clothing,neutral,sokk-en,brette,kim,%,begynte/starte,på|med|\b,sokken,%,.,4,1
+33,b,clothing,subject,sokk-en,brette,moren,%,begynte/starte,på|med|\b,sokken,%,.,4,1
+33,c,clothing,PP,sokk-en,brette,kim,%,begynte/starte,på|med|\b,sokken,til en rund form,.,8,1
+33,d,clothing,dis_context,sokk-en,brette,kim,"[SUBJ] hadde hengt ut klesvasken, og nå som alt var tørt, ville han rydde opp.",begynte/starte,på|med|\b,sokken,%,.,19,1
+34,a,clothing,neutral,lue-n,tørke,kim,%,begynte/starte,på|med|\b,luen,%,.,4,1
+34,b,clothing,subject,lue-n,tørke,tjenestepersonellet,%,begynte/starte,på|med|\b,luen,%,.,4,1
+34,c,clothing,PP,lue-n,tørke,kim,%,begynte/starte,på|med|\b,luen,i den store hagen,.,8,1
+34,d,clothing,dis_context,lue-n,tørke,kim,"[SUBJ] hadde det travelt fordi han skulle til en avtale, men klærne hans var ennå våte.",begynte/starte,på|med|\b,luen,%,.,20,1
+35,a,clothing,neutral,kappe-n,vaske,kim,%,begynte/starte,på|med|\b,kappen,%,.,4,1
+35,b,clothing,subject,kappe-n,vaske,ansatte,%,begynte/starte,på|med|\b,kappen,%,.,4,1
+35,c,clothing,PP,kappe-n,vaske,kim,%,begynte/starte,på|med|\b,kappen,ved hjelp av såpe,.,8,1
+35,d,clothing,dis_context,kappe-n,vaske,kim,[SUBJ] hadde fått alle klærne sine skitne og bestemte seg raskt for å løse problemet.,begynte/starte,på|med|\b,kappen,%,.,19,1
+36,a,clothing,neutral,anorakk-en,stryke,kim,%,begynte/starte,på|med|\b,anorakken,%,.,4,1
+36,b,clothing,subject,anorakk-en,stryke,mormoren,%,begynte/starte,på|med|\b,anorakken,%,.,4,1
+36,c,clothing,PP,anorakk-en,stryke,kim,%,begynte/starte,på|med|\b,anorakken,ved høye temperaturer,.,7,1
+36,d,clothing,dis_context,anorakk-en,stryke,kim,[SUBJ] oppdaget plutselig at et reiseklærstykke var skittent på høyre erme og ville fikse det.,begynte/starte,på|med|\b,anorakken,%,.,19,1
+37,a,clothing,neutral,genser-en,sy,kim,%,begynte/starte,på|med|\b,genseren,%,.,4,1
+37,b,clothing,subject,genser-en,sy,tanten,%,begynte/starte,på|med|\b,genseren,%,.,4,1
+37,c,clothing,PP,genser-en,sy,kim,%,begynte/starte,på|med|\b,genseren,med nål og tråd,.,8,1
+37,d,clothing,dis_context,genser-en,sy,kim,[SUBJ] hadde noen gamle og ødelagte klær som han gjerne ville ha på seg igjen.,begynte/starte,på|med|\b,genseren,%,.,19,1
+38,a,clothing,neutral,hanske-n,vaske,kim,%,begynte/starte,på|med|\b,hansken,%,.,4,1
+38,b,clothing,subject,hanske-n,vaske,servicepersonellet,%,begynte/starte,på|med|\b,hansken,%,.,4,1
+38,c,clothing,PP,hanske-n,vaske,kim,%,begynte/starte,på|med|\b,hansken,ved hjelp av tøymykner,.,8,1
+38,d,clothing,dis_context,hanske-n,vaske,kim,[SUBJ] hadde datterens skitne klær i kurven i fjorten dager og måtte gjøre opp for seg.,begynte/starte,på|med|\b,hansken,%,.,20,1
+39,a,clothing,neutral,skjørt-et,desinfisere,kim,%,begynte/starte,på|med|\b,skjørtet,%,.,4,1
+39,b,clothing,subject,skjørt-et,desinfisere,hygienikeren,%,begynte/starte,på|med|\b,skjørtet,%,.,4,1
+39,c,clothing,PP,skjørt-et,desinfisere,kim,%,begynte/starte,på|med|\b,skjørtet,mot umiddelbar bakterievekst,.,7,1
+39,d,clothing,dis_context,skjørt-et,desinfisere,kim,"[SUBJ] var en kjent hypokonder som, etter vask, gjorde mer enn bare å vaske klær.",begynte/starte,på|med|\b,skjørtet,%,.,19,1
+40,a,clothing,neutral,bukse-n,farge,kim,%,begynte/starte,på|med|\b,buksen,%,.,4,1
+40,b,clothing,subject,bukse-n,farge,kunstneren,%,begynte/starte,på|med|\b,buksen,%,.,4,1
+40,c,clothing,PP,bukse-n,farge,kim,%,begynte/starte,på|med|\b,buksen,for et lysere stoff,.,8,1
+40,d,clothing,dis_context,bukse-n,farge,kim,[SUBJ] hadde klær som han ville skifte farge på for å gå på fest i byen.,begynte/starte,på|med|\b,buksen,%,.,20,1
+41,a,clothing,neutral,kjole-n,skjære,kim,%,begynte/starte,på|med|\b,kjolen,%,.,4,1
+41,b,clothing,subject,kjole-n,skjære,frisøren,%,begynte/starte,på|med|\b,kjolen,%,.,4,1
+41,c,clothing,PP,kjole-n,skjære,kim,%,begynte/starte,på|med|\b,kjolen,opp til kneet,.,7,1
+41,d,clothing,dis_context,kjole-n,skjære,kim,[SUBJ] ønsket seg et kostyme til halloween og tok med seg en saks med skarpe spisser.,begynte/starte,på|med|\b,kjolen,%,.,20,1
+42,a,clothing,neutral,klær-PLU-ne,vaske,kim,%,begynte/starte,på|med|\b,klærne,%,.,4,1
+42,b,clothing,subject,klær-PLU-ne,vaske,stuepiken,%,begynte/starte,på|med|\b,klærne,%,.,4,1
+42,c,clothing,PP,klær-PLU-ne,vaske,kim,%,begynte/starte,på|med|\b,klærne,uten skånsom sentrifugering,.,7,1
+42,d,clothing,dis_context,klær-PLU-ne,vaske,kim,[SUBJ] hadde skittentøyskurven og litt middel i hånden og var på rask vei ned trappen.,begynte/starte,på|med|\b,klærne,%,.,19,1
+43,a,clothing,neutral,kostyme-t,designe,kim,%,begynte/starte,på|med|\b,kostymet,%,.,4,1
+43,b,clothing,subject,kostyme-t,designe,stylisten,%,begynte/starte,på|med|\b,kostymet,%,.,4,1
+43,c,clothing,PP,kostyme-t,designe,kim,%,begynte/starte,på|med|\b,kostymet,for et motehus,.,7,1
+43,d,clothing,dis_context,kostyme-t,designe,kim,[SUBJ] ønsket å foreslå en serie plagg som skulle selges til kundene til neste høst.,begynte/starte,på|med|\b,kostymet,%,.,19,1
+44,a,clothing,neutral,belte-t,pynte,kim,%,begynte/starte,på|med|\b,beltet,%,.,4,1
+44,b,clothing,subject,belte-t,pynte,estetiker,%,begynte/starte,på|med|\b,beltet,%,.,4,1
+44,c,clothing,PP,belte-t,pynte,kim,%,begynte/starte,på|med|\b,beltet,i prikkede toner,.,7,1
+44,d,clothing,dis_context,belte-t,pynte,kim,[SUBJ] hadde klær i en veldig stygg farge og ønsket å gjøre endringer som passet ham.,begynte/starte,på|med|\b,beltet,%,.,20,1
+45,a,clothing,neutral,skjerf-et,vaske,kim,%,begynte/starte,på|med|\b,skjerfet,%,.,4,1
+45,b,clothing,subject,skjerf-et,vaske,hushjelpen,%,begynte/starte,på|med|\b,skjerfet,%,.,4,1
+45,c,clothing,PP,skjerf-et,vaske,kim,%,begynte/starte,på|med|\b,skjerfet,på grunn av flekker,.,8,1
+45,d,clothing,dis_context,skjerf-et,vaske,kim,"[SUBJ] var kald, men hadde ikke noe rent å vikle rundt halsen for å beskytte seg.",begynte/starte,på|med|\b,skjerfet,%,.,20,1
+46,a,everyday objects,neutral,dukke-n,kjemme,kim,%,begynte/starte,på|med|\b,dukken,%,.,4,1
+46,b,everyday objects,subject,dukke-n,kjemme,frisøren,%,begynte/starte,på|med|\b,dukken,%,.,4,1
+46,c,everyday objects,PP,dukke-n,kjemme,kim,%,begynte/starte,på|med|\b,dukken,ved hjelp av kammen,.,8,1
+46,d,everyday objects,dis_context,dukke-n,kjemme,kim,[SUBJ] hadde ustelt hår og bestemte seg for å ordne det før han gikk til middag.,begynte/starte,på|med|\b,dukken,%,.,20,1
+47,a,everyday objects,neutral,gardin-en,strikke,kim,%,begynte/starte,på|med|\b,gardinen,%,.,4,1
+47,b,everyday objects,subject,gardin-en,strikke,tekstilhåndverker,%,begynte/starte,på|med|\b,gardinen,%,.,4,1
+47,c,everyday objects,PP,gardin-en,strikke,kim,%,begynte/starte,på|med|\b,gardinen,fra de langsgående kantene,.,8,1
+47,d,everyday objects,dis_context,gardin-en,strikke,kim,[SUBJ] hadde litt ull til å lage en dekorasjon til å henge foran vinduet i stuen.,begynte/starte,på|med|\b,gardinen,%,.,20,1
+48,a,everyday objects,neutral,juvel-en,gravere/riste,kim,%,begynte/starte,på|med|\b,juvelen,%,.,4,1
+48,b,everyday objects,subject,juvel-en,gravere/riste,xylografen,%,begynte/starte,på|med|\b,juvelen,%,.,4,1
+48,c,everyday objects,PP,juvel-en,gravere/riste,kim,%,begynte/starte,på|med|\b,juvelen,to millimeter dypt,.,7,1
+48,d,everyday objects,dis_context,juvel-en,gravere/riste,kim,[SUBJ] ønsket å personliggjøre noen personlige tilbehør med navnet til sin kone og lille datter.,begynte/starte,på|med|\b,juvelen,%,.,19,1
+49,a,everyday objects,neutral,ring-en,sage,kim,%,begynte/starte,på|med|\b,ringen,%,.,4,1
+49,b,everyday objects,subject,ring-en,sage,tømreren,%,begynte/starte,på|med|\b,ringen,%,.,4,1
+49,c,everyday objects,PP,ring-en,sage,kim,%,begynte/starte,på|med|\b,ringen,i to deler,.,7,1
+49,d,everyday objects,dis_context,ring-en,sage,kim,[SUBJ] kunne ikke ta av seg tilbehøret på fingeren fordi det var for stramt og små.,begynte/starte,på|med|\b,ringen,%,.,20,1
+50,a,everyday objects,neutral,amulett-en,farge,kim,%,begynte/starte,på|med|\b,amuletten,%,.,4,1
+50,b,everyday objects,subject,amulett-en,farge,kunstneren,%,begynte/starte,på|med|\b,amuletten,%,.,4,1
+50,c,everyday objects,PP,amulett-en,farge,kim,%,begynte/starte,på|med|\b,amuletten,i lyse kulører,.,7,1
+50,d,everyday objects,dis_context,amulett-en,farge,kim,[SUBJ] ønsket å endre fargen på et smykke som han skulle gi til barnebarna sine.,begynte/starte,på|med|\b,amuletten,%,.,19,1
+51,a,everyday objects,neutral,medalje-n,rense ,kim,%,begynte/starte,på|med|\b,medaljen,%,.,4,1
+51,b,everyday objects,subject,medalje-n,rense ,stuepiken,%,begynte/starte,på|med|\b,medaljen,%,.,4,1
+51,c,everyday objects,PP,medalje-n,rense ,kim,%,begynte/starte,på|med|\b,medaljen,på grunn av skitt,.,8,1
+51,d,everyday objects,dis_context,medalje-n,rense ,kim,[SUBJ] ville fjerne skitten fra en av idrettsprisene han nylig hadde vunnet det siste året.,begynte/starte,på|med|\b,medaljen,%,.,19,1
+52,a,everyday objects,neutral,brosje-n,ødelegge,kim,%,begynte/starte,på|med|\b,brosjen,%,.,4,1
+52,b,everyday objects,subject,brosje-n,ødelegge,pyroteknikeren,%,begynte/starte,på|med|\b,brosjen,%,.,4,1
+52,c,everyday objects,PP,brosje-n,ødelegge,kim,%,begynte/starte,på|med|\b,brosjen,på grunn av sjokkbølgen,.,8,1
+52,d,everyday objects,dis_context,brosje-n,ødelegge,kim,"[SUBJ] ble rasende over familievennens smålige oppførsel, så han hentet en skarp hammer fra kjelleren.",begynte/starte,på|med|\b,brosjen,%,.,19,1
+53,a,everyday objects,neutral,tiara-en,gravere/riste,kim,%,begynte/starte,på|med|\b,tiaraen,%,.,4,1
+53,b,everyday objects,subject,tiara-en,gravere/riste,xilografen,%,begynte/starte,på|med|\b,tiaraen,%,.,4,1
+53,c,everyday objects,PP,tiara-en,gravere/riste,kim,%,begynte/starte,på|med|\b,tiaraen,ved hjelp av meisel,.,8,1
+53,d,everyday objects,dis_context,tiara-en,gravere/riste,kim,[SUBJ] ville imponere dronningen med noen dedikasjoner som var lagt igjen på et hardt underlag.,begynte/starte,på|med|\b,tiaraen,%,.,19,1
+54,a,everyday objects,neutral,diamant-en,farge,kim,%,begynte/starte,på|med|\b,diamanten,%,.,4,1
+54,b,everyday objects,subject,diamant-en,farge,kunstneren,%,begynte/starte,på|med|\b,diamanten,%,.,4,1
+54,c,everyday objects,PP,diamant-en,farge,kim,%,begynte/starte,på|med|\b,diamanten,i fargede sprayer,.,7,1
+54,d,everyday objects,dis_context,diamant-en,farge,kim,[SUBJ] bestemte seg for å hente en stor pensel fordi fargen på smykkene var forferdelig.,begynte/starte,på|med|\b,diamanten,%,.,19,1
+55,a,everyday objects,neutral,kjede-n,smelte,kim,%,begynte/starte,på|med|\b,kjeden,%,.,4,1
+55,b,everyday objects,subject,kjede-n,smelte,juveleren,%,begynte/starte,på|med|\b,kjeden,%,.,4,1
+55,c,everyday objects,PP,kjede-n,smelte,kim,%,begynte/starte,på|med|\b,kjeden,ved høye temperaturer,.,7,1
+55,d,everyday objects,dis_context,kjede-n,smelte,kim,[SUBJ] ville gjenbruke noen gamle smykker til å lage et nytt ved hjelp av en blåselampe.,begynte/starte,på|med|\b,kjeden,%,.,20,1
+56,a,everyday objects,neutral,veske-n,vaske,kim,%,begynte/starte,på|med|\b,vesken,%,.,4,1
+56,b,everyday objects,subject,veske-n,vaske,hushjelpen,%,begynte/starte,på|med|\b,vesken,%,.,4,1
+56,c,everyday objects,PP,veske-n,vaske,kim,%,begynte/starte,på|med|\b,vesken,i 40 grader,.,7,1
+56,d,everyday objects,dis_context,veske-n,vaske,kim,"[SUBJ] hadde falt i en sølepytt, og nå ville han fjerne flekkene fra tilbehøret før middagen.",begynte/starte,på|med|\b,vesken,%,.,20,1
+57,a,everyday objects,neutral,bamse-n,tørke,kim,%,begynte/starte,på|med|\b,bamsen,%,.,4,1
+57,b,everyday objects,subject,bamse-n,tørke,mormoren,%,begynte/starte,på|med|\b,bamsen,%,.,4,1
+57,c,everyday objects,PP,bamse-n,tørke,kim,%,begynte/starte,på|med|\b,bamsen,ved hjelp av hårføneren,.,8,1
+57,d,everyday objects,dis_context,bamse-n,tørke,kim,[SUBJ] finner alle lekene sine våte etter forliset og bestemmer seg derfor for å løse problemet.,begynte/starte,på|med|\b,bamsen,%,.,20,1
+58,a,everyday objects,neutral,ball-en,tegne,kim,%,begynte/starte,på|med|\b,ballen,%,.,4,1
+58,b,everyday objects,subject,ball-en,tegne,kunstneren,%,begynte/starte,på|med|\b,ballen,%,.,4,1
+58,c,everyday objects,PP,ball-en,tegne,kim,%,begynte/starte,på|med|\b,ballen,til et designprosjekt,.,7,1
+58,d,everyday objects,dis_context,ball-en,tegne,kim,[SUBJ] ville avbilde sønnens favorittsuperhelt på en av lekene han nettopp hadde kjøpt på kjøpesenteret.,begynte/starte,på|med|\b,ballen,%,.,19,1
+59,a,everyday objects,neutral,robot-en,sage,kim,%,begynte/starte,på|med|\b,roboten,%,.,4,1
+59,b,everyday objects,subject,robot-en,sage,snekkeren,%,begynte/starte,på|med|\b,roboten,%,.,4,1
+59,c,everyday objects,PP,robot-en,sage,kim,%,begynte/starte,på|med|\b,roboten,ved hjelp av motorsag,.,8,1
+59,d,everyday objects,dis_context,robot-en,sage,kim,"[SUBJ], innså at demontering av enkelte maskindeler var vanskelig og krevde en mer voldsom tilnærming.",begynte/starte,på|med|\b,roboten,%,.,19,1
+60,a,everyday objects,neutral,lego-en,ødelegge,kim,%,begynte/starte,på|med|\b,legoen,%,.,4,1
+60,b,everyday objects,subject,lego-en,ødelegge,soldaten,%,begynte/starte,på|med|\b,legoen,%,.,4,1
+60,c,everyday objects,PP,lego-en,ødelegge,kim,%,begynte/starte,på|med|\b,legoen,med voldsom kraft,.,7,1
+60,d,everyday objects,dis_context,lego-en,ødelegge,kim,"[SUBJ] tok en hammer fra skuffen, klar til å slå løs i en slags kreativ frustrasjon.",begynte/starte,på|med|\b,legoen,%,.,20,1
+61,a,construction/housing,neutral,skulptur-en,dekorere,kim,%,begynte/starte,på|med|\b,skulpturen,%,.,4,1
+61,b,construction/housing,subject,skulptur-en,dekorere,kunsthåndverker,%,begynte/starte,på|med|\b,skulpturen,%,.,4,1
+61,c,construction/housing,PP,skulptur-en,dekorere,kim,%,begynte/starte,på|med|\b,skulpturen,for en bedre skjønnhet,.,8,1
+61,d,construction/housing,dis_context,skulptur-en,dekorere,kim,"[SUBJ] forberedte en religiøs festival, og alt måtte være estetisk tiltalende for publikumet i kveld.",begynte/starte,på|med|\b,skulpturen,%,.,19,1
+62,a,construction/housing,neutral,statue-en,gravere/riste,kim,%,begynte/starte,på|med|\b,statuen,%,.,4,1
+62,b,construction/housing,subject,statue-en,gravere/riste,xilografen,%,begynte/starte,på|med|\b,statuen,%,.,4,1
+62,c,construction/housing,PP,statue-en,gravere/riste,kim,%,begynte/starte,på|med|\b,statuen,for større dybde,.,7,1
+62,d,construction/housing,dis_context,statue-en,gravere/riste,kim,[SUBJ] tok en burin og var på vei til noen skulpturer for å forbedre dem.,begynte/starte,på|med|\b,statuen,%,.,19,1
+63,a,construction/housing,neutral,grøft-en,fylle,kim,%,begynte/starte,på|med|\b,grøften,%,.,4,1
+63,b,construction/housing,subject,grøft-en,fylle,rørleggeren,%,begynte/starte,på|med|\b,grøften,%,.,4,1
+63,c,construction/housing,PP,grøft-en,fylle,kim,%,begynte/starte,på|med|\b,grøften,opp til kanten,.,7,1
+63,d,construction/housing,dis_context,grøft-en,fylle,kim,[SUBJ] hadde planer om å lage en ny dam utenfor huset til fiskene og endene sine.,begynte/starte,på|med|\b,grøften,%,.,20,1
+64,a,construction/housing,neutral,tunnel-en,ødelegge,kim,%,begynte/starte,på|med|\b,tunnelen,%,.,4,1
+64,b,construction/housing,subject,tunnel-en,ødelegge,artilleriet ,%,begynte/starte,på|med|\b,tunnelen,%,.,5,1
+64,c,construction/housing,PP,tunnel-en,ødelegge,kim,%,begynte/starte,på|med|\b,tunnelen,ved hjelp av TNT,.,8,1
+64,d,construction/housing,dis_context,tunnel-en,ødelegge,kim,[SUBJ] visste at den eneste redningen for ham mot fiendene var å kutte veiforbindelsene med vold.,begynte/starte,på|med|\b,tunnelen,%,.,20,1
+65,a,construction/housing,neutral,vegg-en,bore,kim,%,begynte/starte,på|med|\b,veggen,%,.,4,1
+65,b,construction/housing,subject,vegg-en,bore,rørleggeren,%,begynte/starte,på|med|\b,veggen,%,.,4,1
+65,c,construction/housing,PP,vegg-en,bore,kim,%,begynte/starte,på|med|\b,veggen,for lampemonteringen,.,6,1
+65,d,construction/housing,dis_context,vegg-en,bore,kim,"[SUBJ] ville henge opp TV-en, men hele overflaten i stuen var fortsatt glatt og urørt.",begynte/starte,på|med|\b,veggen,%,.,19,1
+66,a,construction/housing,neutral,lampe-n,reparere,kim,%,begynte/starte,på|med|\b,lampen,%,.,4,1
+66,b,construction/housing,subject,lampe-n,reparere,elektrikeren,%,begynte/starte,på|med|\b,lampen,%,.,4,1
+66,c,construction/housing,PP,lampe-n,reparere,kim,%,begynte/starte,på|med|\b,lampen,på grunn av skaden,.,8,1
+66,d,construction/housing,dis_context,lampe-n,reparere,kim,[SUBJ] hadde fått ødelagt elektriske installasjoner på grunn av en storm og måtte finne en løsning.,begynte/starte,på|med|\b,lampen,%,.,20,1
+67,a,construction/housing,neutral,mur-en,rense,kim,%,begynte/starte,på|med|\b,muren,%,.,4,1
+67,b,construction/housing,subject,mur-en,rense,stuepiken,%,begynte/starte,på|med|\b,muren,%,.,4,1
+67,c,construction/housing,PP,mur-en,rense,kim,%,begynte/starte,på|med|\b,muren,på grunn av smuss,.,8,1
+67,d,construction/housing,dis_context,mur-en,rense,kim,[SUBJ] forberedte en mopp fordi han hadde skittent til hele huset etter en stor fest.,begynte/starte,på|med|\b,muren,%,.,19,1
+68,a,construction/housing,neutral,demning-en,ødelegge,kim,%,begynte/starte,på|med|\b,demningen,%,.,4,1
+68,b,construction/housing,subject,demning-en,ødelegge,hæren,%,begynte/starte,på|med|\b,demningen,%,.,4,1
+68,c,construction/housing,PP,demning-en,ødelegge,kim,%,begynte/starte,på|med|\b,demningen,ved hjelp av rifleskudd,.,8,1
+68,d,construction/housing,dis_context,demning-en,ødelegge,kim,[SUBJ] mente at en måte å stoppe brannen på var å kaste store mengder vann.,begynte/starte,på|med|\b,demningen,%,.,19,1
+69,a,construction/housing,neutral,møbel-et,sage,kim,%,begynte/starte,på|med|\b,møbelet,%,.,4,1
+69,b,construction/housing,subject,møbel-et,sage,snekkeren,%,begynte/starte,på|med|\b,møbelet,%,.,4,1
+69,c,construction/housing,PP,møbel-et,sage,kim,%,begynte/starte,på|med|\b,møbelet,i familiens snekkerverkstedet,.,7,1
+69,d,construction/housing,dis_context,møbel-et,sage,kim,[SUBJ] ønsket å få ved fra gamle husholdningsartikler som ville være perfekt til peisen hans.,begynte/starte,på|med|\b,møbelet,%,.,19,1
+70,a,construction/housing,neutral,vase-n,gravere/riste,kim,%,begynte/starte,på|med|\b,vasen,%,.,4,1
+70,b,construction/housing,subject,vase-n,gravere/riste,xilografen,%,begynte/starte,på|med|\b,vasen,%,.,4,1
+70,c,construction/housing,PP,vase-n,gravere/riste,kim,%,begynte/starte,på|med|\b,vasen,for dype linjer,.,7,1
+70,d,construction/housing,dis_context,vase-n,gravere/riste,kim,[SUBJ] hadde brent leiren lenge og ville deretter signere verket sitt på den harde overflaten.,begynte/starte,på|med|\b,vasen,%,.,19,1
+71,a,construction/housing,neutral,ventilator-en,male,kim,%,begynte/starte,på|med|\b,ventilatoren,%,.,4,1
+71,b,construction/housing,subject,ventilator-en,male,maleren,%,begynte/starte,på|med|\b,ventilatoren,%,.,4,1
+71,c,construction/housing,PP,ventilator-en,male,kim,%,begynte/starte,på|med|\b,ventilatoren,i røde prikker,.,7,1
+71,d,construction/housing,dis_context,ventilator-en,male,kim,"[SUBJ] ønsket å friske opp noen gamle, stygge og grå hvitevarer med nye farger før sommeren.",begynte/starte,på|med|\b,ventilatoren,%,.,20,1
+72,a,construction/housing,neutral,speil-et,rense,kim,%,begynte/starte,på|med|\b,speilet,%,.,4,1
+72,b,construction/housing,subject,speil-et,rense,husholdningsarbeider,%,begynte/starte,på|med|\b,speilet,%,.,4,1
+72,c,construction/housing,PP,speil-et,rense,kim,%,begynte/starte,på|med|\b,speilet,på grunn av urenheten,.,8,1
+72,d,construction/housing,dis_context,speil-et,rense,kim,[SUBJ] var på badet for å gjøre rommet friskt og rent etter en uke borte hjemmefra.,begynte/starte,på|med|\b,speilet,%,.,20,1
+73,a,construction/housing,neutral,flagg-et,sy,kim,%,begynte/starte,på|med|\b,flagget,%,.,4,1
+73,b,construction/housing,subject,flagg-et,sy,skredderen,%,begynte/starte,på|med|\b,flagget,%,.,4,1
+73,c,construction/housing,PP,flagg-et,sy,kim,%,begynte/starte,på|med|\b,flagget,etter den plutselige rivingen,.,8,1
+73,d,construction/housing,dis_context,flagg-et,sy,kim,[SUBJ] hadde noen ødelagte tekstiler i kjelleren som han ønsket å gjenbruke i hjemmet sitt.,begynte/starte,på|med|\b,flagget,%,.,19,1
+74,a,construction/housing,neutral,fane-n,skjære,kim,%,begynte/starte,på|med|\b,fanen,%,.,4,1
+74,b,construction/housing,subject,fane-n,skjære,mormoren,%,begynte/starte,på|med|\b,fanen,%,.,4,1
+74,c,construction/housing,PP,fane-n,skjære,kim,%,begynte/starte,på|med|\b,fanen,ved hjelp av øksen,.,8,1
+74,d,construction/housing,dis_context,fane-n,skjære,kim,"[SUBJ] tålte ikke symbolene som var avbildet på stoffet, og tok derfor en skarp eskekniv.",begynte/starte,på|med|\b,fanen,%,.,19,1
+75,a,construction/housing,neutral,telt-et,male,kim,%,begynte/starte,på|med|\b,teltet,%,.,4,1
+75,b,construction/housing,subject,telt-et,male,kunstneren,%,begynte/starte,på|med|\b,teltet,%,.,4,1
+75,c,construction/housing,PP,telt-et,male,kim,%,begynte/starte,på|med|\b,teltet,i hvite penselstrøk,.,7,1
+75,d,construction/housing,dis_context,telt-et,male,kim,"[SUBJ] hadde en del gammelt og falmet campingutstyr, og ville deretter gi dem ny farge.",begynte/starte,på|med|\b,teltet,%,.,19,1
+76,a,construction/housing,neutral,port-en,reparere,kim,%,begynte/starte,på|med|\b,porten,%,.,4,1
+76,b,construction/housing,subject,port-en,reparere,smeden,%,begynte/starte,på|med|\b,porten,%,.,4,1
+76,c,construction/housing,PP,port-en,reparere,kim,%,begynte/starte,på|med|\b,porten,på grunn av skaden,.,8,1
+76,d,construction/housing,dis_context,port-en,reparere,kim,[SUBJ] tok med seg hammeren og sveiseapparatet etter at stormen ødela hele huset dagen før. ,begynte/starte,på|med|\b,porten,%,.,20,1
+77,a,entratainment,neutral,refreng-et,oversette,kim,%,begynte/starte,på|med|\b,refrenget,%,.,4,1
+77,b,entratainment,subject,refreng-et,oversette,tolken,%,begynte/starte,på|med|\b,refrenget,%,.,4,1
+77,c,entratainment,PP,refreng-et,oversette,kim,%,begynte/starte,på|med|\b,refrenget,for et utenlandsk forlag,.,8,1
+77,d,entratainment,dis_context,refreng-et,oversette,kim,"[SUBJ] ville forstå hva den nye sangen mente, men den var på et fremmed språk.",begynte/starte,på|med|\b,refrenget,%,.,19,1
+78,a,entratainment,neutral,ballade-n,høre,kim,%,begynte/starte,på|med|\b,balladen,%,.,4,1
+78,b,entratainment,subject,ballade-n,høre,tilskueren,%,begynte/starte,på|med|\b,balladen,%,.,4,1
+78,c,entratainment,PP,ballade-n,høre,kim,%,begynte/starte,på|med|\b,balladen,fra bilens lydhøyttalere,.,7,1
+78,d,entratainment,dis_context,ballade-n,høre,kim,"[SUBJ] satt på benken og skrudde opp volumet på hodetelefonene sine, i humør til underholdning.",begynte/starte,på|med|\b,balladen,%,.,19,1
+79,a,entratainment,neutral,podkast-en,laste,kim,%,begynte/starte,på|med|\b,podkasten,%,.,4,1
+79,b,entratainment,subject,podkast-en,laste,internettbrukeren,%,begynte/starte,på|med|\b,podkasten,%,.,4,1
+79,c,entratainment,PP,podkast-en,laste,kim,%,begynte/starte,på|med|\b,podkasten,fra uTorrent,.,6,1
+79,d,entratainment,dis_context,podkast-en,laste,kim,[SUBJ] måtte ta en lang reise og ville høre på nye lydene offline uten Internett.,begynte/starte,på|med|\b,podkasten,%,.,19,1
+80,a,entratainment,neutral,hymne-n,lese,kim,%,begynte/starte,på|med|\b,hymnen,%,.,4,1
+80,b,entratainment,subject,hymne-n,lese,lektoren,%,begynte/starte,på|med|\b,hymnen,%,.,4,1
+80,c,entratainment,PP,hymne-n,lese,kim,%,begynte/starte,på|med|\b,hymnen,høyt på scenen,.,7,1
+80,d,entratainment,dis_context,hymne-n,lese,kim,[SUBJ] satt i sofaen og åpnet en bok som inneholdt flere år gamle interessante tekster.,begynte/starte,på|med|\b,hymnen,%,.,19,1
+81,a,entratainment,neutral,ode-n,oversette,kim,%,begynte/starte,på|med|\b,oden,%,.,4,1
+81,b,entratainment,subject,ode-n,oversette,tolken,%,begynte/starte,på|med|\b,oden,%,.,4,1
+81,c,entratainment,PP,ode-n,oversette,kim,%,begynte/starte,på|med|\b,oden,fra latin til norsk,.,8,1
+81,d,entratainment,dis_context,ode-n,oversette,kim,[SUBJ] ønsket å bringe en ny tekst til Norge som ikke var tilgjengelig på norsk.,begynte/starte,på|med|\b,oden,%,.,19,1
+82,a,entratainment,neutral,salme-n,danse,kim,%,begynte/starte,på|med|\b,salmen,%,.,4,1
+82,b,entratainment,subject,salme-n,danse,atleten,%,begynte/starte,på|med|\b,salmen,%,.,4,1
+82,c,entratainment,PP,salme-n,danse,kim,%,begynte/starte,på|med|\b,salmen,i raske skritt,.,7,1
+82,d,entratainment,dis_context,salme-n,danse,kim,[SUBJ] sto allerede på scenen foran tilskuerne klar til å bevege seg i takt med begravelsesmusikken.,begynte/starte,på|med|\b,salmen,%,.,20,1
+83,a,entratainment,neutral,riff-et,høre,kim,%,begynte/starte,på|med|\b,riffet,%,.,4,1
+83,b,entratainment,subject,riff-et,høre,publikumet,%,begynte/starte,på|med|\b,riffet,%,.,4,1
+83,c,entratainment,PP,riff-et,høre,kim,%,begynte/starte,på|med|\b,riffet,fra pubens radio,.,7,1
+83,d,entratainment,dis_context,riff-et,høre,kim,"[SUBJ] ventet på den vakreste delen av sangen, spilt og sunget av hans absolutte favorittband.",begynte/starte,på|med|\b,riffet,%,.,19,1
+84,a,entratainment,neutral,flamenco-en,tilskue,kim,%,begynte/starte,på|med|\b,flamencoen,%,.,4,1
+84,b,entratainment,subject,flamenco-en,tilskue,gjesten,%,begynte/starte,på|med|\b,flamencoen,%,.,4,1
+84,c,entratainment,PP,flamenco-en,tilskue,kim,%,begynte/starte,på|med|\b,flamencoen,i hovedstadens teater,.,7,1
+84,d,entratainment,dis_context,flamenco-en,tilskue,kim,[SUBJ] sto overfor en liten spansk festival i gatene i sentrum av byen og var nysgjerrig.,begynte/starte,på|med|\b,flamencoen,%,.,20,1
+85,a,entratainment,neutral,melodi-en,danse,kim,%,begynte/starte,på|med|\b,melodien,%,.,4,1
+85,b,entratainment,subject,melodi-en,danse,koreografen,%,begynte/starte,på|med|\b,melodien,%,.,4,1
+85,c,entratainment,PP,melodi-en,danse,kim,%,begynte/starte,på|med|\b,melodien,i raske rykk,.,7,1
+85,d,entratainment,dis_context,melodi-en,danse,kim,[SUBJ] fikk lyst til å bevege seg gjerne da han hørte favorittsangen sin på radioen.,begynte/starte,på|med|\b,melodien,%,.,19,1
+86,a,entratainment,neutral,anime-n,oversette,kim,%,begynte/starte,på|med|\b,animen,%,.,4,1
+86,b,entratainment,subject,anime-n,oversette,tolken,%,begynte/starte,på|med|\b,animen,%,.,4,1
+86,c,entratainment,PP,anime-n,oversette,kim,%,begynte/starte,på|med|\b,animen,fra fransk til italiensk,.,8,1
+86,d,entratainment,dis_context,anime-n,oversette,kim,[SUBJ] skulle publisere noen pilotepisoder i Frankrike og deretter foreslå nye tekster på det språket.,begynte/starte,på|med|\b,animen,%,.,19,1
+87,a,entratainment,neutral,portrett-et,filme,kim,%,begynte/starte,på|med|\b,portrettet,%,.,4,1
+87,b,entratainment,subject,portrett-et,filme,regissøren,%,begynte/starte,på|med|\b,portrettet,%,.,4,1
+87,c,entratainment,PP,portrett-et,filme,kim,%,begynte/starte,på|med|\b,portrettet,ved hjelp av kamaeraet,.,8,1
+87,d,entratainment,dis_context,portrett-et,filme,kim,"[SUBJ] stoppet ved et gammelt kunstverksted, tok opp telefonen og satte den raskt i videomodus.",begynte/starte,på|med|\b,portrettet,%,.,19,1
+88,a,entratainment,neutral,freske-n,undersøke,kim,%,begynte/starte,på|med|\b,fresken,%,.,4,1
+88,b,entratainment,subject,freske-n,undersøke,studenten,%,begynte/starte,på|med|\b,fresken,%,.,4,1
+88,c,entratainment,PP,freske-n,undersøke,kim,%,begynte/starte,på|med|\b,fresken,i et laboratorium,.,7,1
+88,d,entratainment,dis_context,freske-n,undersøke,kim,[SUBJ] tok på seg hvite antibakterielle hansker og avdekket en eske fra en gammel ullduk.,begynte/starte,på|med|\b,fresken,%,.,19,1
+89,a,entratainment,neutral,graffiti-en,spraye,kim,%,begynte/starte,på|med|\b,graffitien,%,.,4,1
+89,b,entratainment,subject,graffiti-en,spraye,gatekunstaktivisten,%,begynte/starte,på|med|\b,graffitien,%,.,4,1
+89,c,entratainment,PP,graffiti-en,spraye,kim,%,begynte/starte,på|med|\b,graffitien,i jevn flyt,.,7,1
+89,d,entratainment,dis_context,graffiti-en,spraye,kim,"[SUBJ] holdt luftflaskene i hånden og gikk entusiastisk mot den nakne, hvite veggen bak skolen.",begynte/starte,på|med|\b,graffitien,%,.,19,1
+90,a,entratainment,neutral,mosaikk-en,restaurere,kim,%,begynte/starte,på|med|\b,mosaikken,%,.,4,1
+90,b,entratainment,subject,mosaikk-en,restaurere,arkeologen,%,begynte/starte,på|med|\b,mosaikken,%,.,4,1
+90,c,entratainment,PP,mosaikk-en,restaurere,kim,%,begynte/starte,på|med|\b,mosaikken,etter det alvorlige bruddet,.,8,1
+90,d,entratainment,dis_context,mosaikk-en,restaurere,kim,"[SUBJ], en ekspert på å gi liv til skadede verker, befant seg i et kloster.",begynte/starte,på|med|\b,mosaikken,%,.,19,1
+91,a,entratainment,neutral,solo-en,lytte,kim,%,begynte/starte,på|med|\b,soloen,%,.,4,1
+91,b,entratainment,subject,solo-en,lytte,tilskueren,%,begynte/starte,på|med|\b,soloen,%,.,4,1
+91,c,entratainment,PP,solo-en,lytte,kim,%,begynte/starte,på|med|\b,soloen,i hodetelefonen sin,.,7,1
+91,d,entratainment,dis_context,solo-en,lytte,kim,"[SUBJ] skrudde på radioen i bilen på en reise, og en kjent sang ble spilt.",begynte/starte,på|med|\b,soloen,%,.,19,1
