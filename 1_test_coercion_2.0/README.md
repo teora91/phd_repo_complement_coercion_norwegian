@@ -103,7 +103,6 @@ Each item varies along several dimensions:
 
 | Component | Description |
 |---|---|
-| Subjects | Gender-neutral proper names |
 | Entities | 90 nouns across 6 semantic categories |
 | Aspectual verbs | begynne, starte, fortsette, avslutte |
 | Complement constructions | på + NP, med + NP, NP |
@@ -159,8 +158,6 @@ Both **masked language models (MLMs)** and **causal language models (CLMs)** are
 ---
 
 # Repository Structure
-
-
 .
 ├── data_for_task/
 │ ├── llm_list_nor.json
@@ -178,8 +175,6 @@ Both **masked language models (MLMs)** and **causal language models (CLMs)** are
 ├── extract_predictions.py
 ├── utils.py
 ├── test_coercion_launcher.sh
-
-
 ---
 
 # Script Overview
