@@ -200,14 +200,15 @@ Run the full pipeline with:
 
 ```bash
 bash test_coercion_launcher.sh
+```
 
 The script iterates over the list of language models and runs the evaluation pipeline.
 
 Internally it calls:
-
+```bash
 python main.py -idx N -c false
 python main.py -idx N -c true
-
+```
 Parameters:
 
 Argument	Description
