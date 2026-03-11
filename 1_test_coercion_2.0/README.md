@@ -244,7 +244,7 @@ The script extract_predictions.py identifies new entity–event pairs not yet pr
 ### Citation
 
 If you use this repository or dataset, please cite:
-
+```latex
 @inproceedings{radaelli2025compositionality,
   title = {Compositionality and Event Retrieval in Complement Coercion: A Study of Language Models in a Low-resource Setting},
   author = {Radaelli, Matteo and Chersoni, Emmanuele and Lenci, Alessandro and Baggio, Giosu{\`e}},
@@ -256,7 +256,8 @@ If you use this repository or dataset, please cite:
   doi = {10.18653/v1/2025.conll-1.31},
   url = {https://aclanthology.org/2025.conll-1.31/}
 }
-
+```
+```latex
 @inproceedings{radaelli2025context,
   title = {Context Effects on the Interpretation of Complement Coercion: A Comparative Study with Language Models in Norwegian},
   author = {Radaelli, Matteo and Chersoni, Emmanuele and Lenci, Alessandro and Baggio, Giosu{\`e}},
@@ -267,7 +268,7 @@ If you use this repository or dataset, please cite:
   year = {2025},
   url = {https://aclanthology.org/2025.iwcs-main.7/}
 }
-
+```
 ## Co-Authorship and Supervision
 
 The papers and experiments are written by **Matteo Radaelli** as part of his PhD research in Computational Linguistics at the Norwegian University of Science and Technology (NTNU). The work is carried out in collaboration with, and under the supervision of:
