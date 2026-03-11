@@ -18,7 +18,7 @@ class LMHeadModel:
             predictions_logits = outputs.logits
         return predictions_logits
     
-    def get_next_word_probabilities(self, sentence, top_k=200):
+    def get_next_word_probabilities(self, sentence, top_k=10):
         list_same_index_logits_softmax = []
 
         
@@ -72,7 +72,7 @@ class LMHeadModel:
         output_text_list = []
         list_same_index_logits_softmax_list = []
 
-        list_probabilities = self.get_next_word_probabilities(sentence, top_k=200)
+        list_probabilities = self.get_next_word_probabilities(sentence, top_k=10)
         for prob in list_probabilities:
             output_text_list.append(sentence + " " + prob[0] + ".")
             sequence_prediction.append(prob[0].strip())
