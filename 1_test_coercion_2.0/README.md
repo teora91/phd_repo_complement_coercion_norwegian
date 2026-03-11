@@ -196,6 +196,14 @@ Both **masked language models (MLMs)** and **causal language models (CLMs)** are
 
 # Running the Experiments
 
+Install required dependencies
+
+After creating the virtual environment, install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 Run the full pipeline with:
 
 ```bash
