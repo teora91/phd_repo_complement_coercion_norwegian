@@ -257,3 +257,11 @@ If you use this repository or dataset, please cite:
   year = {2025},
   url = {https://aclanthology.org/2025.iwcs-main.7/}
 }
+
+## Co-Authorship and Supervision
+
+The papers and experiments are written by **Matteo Radaelli** as part of his PhD research in Computational Linguistics at the Norwegian University of Science and Technology (NTNU). The work is carried out in collaboration with, and under the supervision of:
+
+* [**Giosuè Baggio**](https://www.ntnu.edu/employees/giosue.baggio) — Professor of Cognitive Science, NTNU. Email: [giosue.baggio@ntnu.no](mailto:giosue.baggio@ntnu.no)
+* [**Emanuele Chersoni**](https://research.polyu.edu.hk/en/persons/emmanuele-chersoni/) — Assistant Professor, The Hong Kong Polytechnic University. Email: [emmanuele.chersoni@polyu.edu.hk](mailto:emmanuele.chersoni@polyu.edu.hk)
+* [**Alessandro Lenci**](https://people.unipi.it/alessandro_lenci/) — Professor, University of Pisa. Email: [alessandro.lenci@unipi.it](mailto:alessandro.lenci@unipi.it)
