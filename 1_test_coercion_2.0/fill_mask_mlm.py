@@ -1,6 +1,6 @@
 from utils import *
 
-def fill_mask_mlm(tokenizer, model, sentence, entity, top_k=200):
+def fill_mask_mlm(tokenizer, model, sentence, entity, top_k=10):
     masked_token_found = []
     
     output_text_list = []
