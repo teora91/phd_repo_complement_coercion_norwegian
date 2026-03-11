@@ -2,7 +2,6 @@ import pandas as pd
 from ast import literal_eval
 import json
 import gspread
-from google.oauth2 import service_account
 from datetime import date
 # from read_gsheet import read_gsheet
 today = date.today().strftime('%d-%m-%y')
