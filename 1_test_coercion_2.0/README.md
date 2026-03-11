@@ -211,19 +211,20 @@ python main.py -idx N -c true
 ```
 Parameters:
 
-Argument	Description
--idx	Model index from the model list
--c false	Context-neutral condition
--c true	Context-enriched condition
-Output
+### Argument	Description
+- -idx	Model index from the model list
+- -c false	Context-neutral condition
+- -c true	Context-enriched condition
+- 
+### Output
 
 Results are generated dynamically when the experiments run.
 
 A results folder is created automatically:
 
-results_coercion_DATE/
+- results_coercion_DATE/
 
-Example outputs:
+- Example outputs:
 
 model_results_with_context_True.csv
 model_results_with_context_False.csv
