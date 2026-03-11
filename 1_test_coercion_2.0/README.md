@@ -226,14 +226,14 @@ A results folder is created automatically:
 
 - Example outputs:
 
-model_results_with_context_True.csv
-model_results_with_context_False.csv
-merged_results_coercion_updated_DATE_with_context_True.csv
-merged_results_coercion_updated_DATE_with_context_False.csv
+- model_results_with_context_True.csv
+- model_results_with_context_False.csv
+- merged_results_coercion_updated_DATE_with_context_True.csv
+- merged_results_coercion_updated_DATE_with_context_False.csv
 
 The script extract_predictions.py identifies new entity–event pairs not yet present in the semantic classification table and exports them for manual annotation.
 
-Citation
+### Citation
 
 If you use this repository or dataset, please cite:
 
