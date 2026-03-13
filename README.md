@@ -42,23 +42,3 @@ Trondheim, Norway<br>
 Email: [matteo.radaelli@ntnu.no](mailto:matteo.radaelli@ntnu.no)
 
 Email: [matteo.radaelli91@gmail.com](mailto:matteo.radaelli91@gmail.com)
-
-## 📂 Repository Structure
-
-```text
-phd_repo_complement_coercion_norwegian/
-├── data/
-│   ├── raw/                  # Native texts and corpus sources
-│   ├── processed/            # Tokenized & annotated coercion items
-│   └── annotations/          # Linguistic annotations & metadata
-├── src/
-│   ├── preprocessing/        # Tokenization, normalization routines
-│   ├── evaluation/           # Model evaluation scripts
-│   ├── surprisal/            # Surprisal computation & analysis code
-│   └── utils/                # Auxiliary functions
-├── experiments/              # Notebooks and experiment logs
-├── results/                  # Evaluation outputs & visualizations
-├── environment.yml           # Reproducible environment spec
-├── setup.py                  # Installation script
-└── README.md                # This file
-```
